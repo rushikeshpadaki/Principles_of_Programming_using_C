@@ -80,7 +80,7 @@ int find_gcd(int n1, int n2)
 // Recursive function to find LCM
 int find_lcm(int n1, int n2)
 {
-    int temp = 1;
+    static int temp = 1;
 
     if (temp % n1 == 0 && temp % n2 == 0)
         return temp;
